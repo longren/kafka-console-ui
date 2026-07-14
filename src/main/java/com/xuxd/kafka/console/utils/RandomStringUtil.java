@@ -11,7 +11,7 @@ public class RandomStringUtil {
     private final static String ALLOWED_CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
     public static String random6Str() {
-        return generateRandomString(6);
+        return generateRandomString(16);
     }
 
     public static String generateRandomString(int length) {

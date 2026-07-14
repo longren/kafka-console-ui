@@ -222,7 +222,8 @@
                         <configuration>
                             <workingDirectory>${ui.path}</workingDirectory>
                             <nodeVersion>v14.16.0</nodeVersion>
-                            <downloadRoot>http://npm.taobao.org/mirrors/node/</downloadRoot>
+                            <!-- <downloadRoot>http://npm.taobao.org/mirrors/node/</downloadRoot> -->
+                            <downloadRoot>http://npmmirror.com/mirrors/node/</downloadRoot>
                         </configuration>
                         <executions>
                             <execution>
@@ -237,8 +238,7 @@
                                     <goal>npm</goal>
                                 </goals>
                                 <configuration>
-                                    <!--                                    <arguments>install &#45;&#45;registry=https://registry.npmjs.org/</arguments>-->
-                                    <arguments>install --registry=https://registry.npm.taobao.org</arguments>
+                                    <arguments>install --registry=https://registry.npmmirror.com/</arguments>
                                 </configuration>
                             </execution>
                             <execution>
